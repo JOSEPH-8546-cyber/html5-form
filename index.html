@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>html form</title>
+</head>
+<!--Este es el father-->
+<body>
+    <div class="container-fluid">
+        <div class="row red">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="card" style="width: 50%;">
+                    <!-- Este es el contendor padre -->
+                    <div class="col-12">
+                        <!-- Este es el título -->
+                        <h2>
+                            Payment Form Example
+                        </h2>
+
+                        <!-- Este es el alert -->
+                        <div>
+                            <div class="alert alert-warning-alert-alert- -dismissible fade show bg-danger"><role="alert">
+                                <strong>Attention!</strong> You should check in on some of those fields below.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+
+                        <!-- Este es el formulario -->
+                        <div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="validationCustom01" class="form-label">card #</label>
+                                        <input type="number" class="form-control" placeholder="xxxxxxxx" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">cvc #</label>
+                                        <input type="text" class="form-control" placeholder="0000" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustomUsername" class="form-label">amount</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                            <input type="text" class="form-control" placeholder="amount">
+                                            <aria-describedby="inputGroupPrepend" required>
+                                                <div class="invalid-feedback">
+                                                    looks good!
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name"
+                                            aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name"
+                                            aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label">country</label>
+                                        <select class="form-select form-control" id="validationCustom04" required>
+                                            <option selected disabled value="">pick a State...</option>
+                                            <option>USA </option>
+                                            <option>Costa Rica</option>
+                                            <option> Panama</option>
+                                            <option>Venezuela</option>
+                                            <option>Colombia</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label">postal code</label>
+                                        <input type="text" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a postal code valid.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="form-group col-6">
+                                        <label for="master" class="font-weight-bold">We accept:</label>
+                                        <div class="input-group-prepend d-flex d-flex">
+                                            <div class="input-group-text bg-secondary">
+                                                <input type="radio" aria-label="Radio button for following text input"
+                                                    name="payment">
+                                                <i class="fab fa-cc-mastercard text-white ml-2"></i>
+                                            </div>
+                                            <div class="input-group-text bg-secondary">
+                                                <input type="radio" aria-label="Radio button for following text input"
+                                                    name="payment">
+                                                <i class="fab fa-cc-visa text-white ml-2"></i>
+                                            </div>
+                                            <div class="input-group-text bg-secondary">
+                                                <input type="radio" aria-label="Radio button for following text input"
+                                                    name="payment">
+                                                <i class="fab fa-cc-diners-club text-white ml-2"></i>
+                                            </div>
+                                            <div class="input-group-text bg-secondary">
+                                                <input type="radio" aria-label="Radio button for following text input"
+                                                    name="payment">
+                                                <i class="fab fa-cc-amex text-white ml-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label class="form-label">message</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Este es el footer -->
+                        <div class="row d-flex justify-content-end bg-danger">
+                            <button>Cancel</button>
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
